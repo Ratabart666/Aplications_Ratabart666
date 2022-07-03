@@ -28,7 +28,7 @@ class MyGridLayout(GridLayout): #Clase especifica para la interfaz
         self.color= TextInput(multiline=False)
         self.add_widget(self.color)
         #Create a submit button
-        self.submit = Button(text="Submit",font_size=32)
+        self.submit = Button(text="Submit",font_size=40,size_hint_y=None,height=50)#width
         # Bind the button
         self.submit.bind(on_press=self.press)
         self.add_widget(self.submit)
